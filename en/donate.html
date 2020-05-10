@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PCBSTools - Donate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/95f44c4954.js" crossorigin="anonymous"></script>
+<link rel="icon" href="https://raw.githubusercontent.com/pcbstools/PCBSTools.github.io/master/pcbstools_icon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../en/index.html" class="w3-bar-item w3-button w3-wide"><img src="img/pcbstools_icon.png" style="width:30px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../en/changelog.html" onclick="window.open('../en/changelog.html'); return false;" class="w3-bar-item w3-button"><i class="fas fa-file-contract"></i>   CHANGELOG</a>
+      <a href="#" class="w3-bar-item w3-button w3-disabled" onclick="alert('Currently, Parts Ranking is unavailable due to API issues. Sorry for inconvenience.')"><i class="fas fa-chart-bar"></i>   PARTS RANKING</a>
+      <a href="../en/calculator.html" class="w3-bar-item w3-button"><i class="fas fa-calculator"></i>   CALCULATOR</a>
+      <div class="w3-dropdown-hover w3-hover-green">
+        <button class="w3-bar-item w3-button"><i class="fas fa-globe"></i> LANGUAGE</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="../ko/donate.html" class="w3-bar-item w3-button">한국어</a>
+            <a href="../en/donate.html" class="w3-bar-item w3-button">English</a>
+            <a href="../pt/donate.html" class="w3-bar-item w3-button">Português</a>
+        </div>
+      </div>
+     <a href="../en/support.html" class="w3-bar-item w3-button"><i class="fas fa-envelope-open-text"></i>   SUPPORT</a>
+     <a href="../en/donate.html" class="w3-bar-item w3-button"><i class="fas fa-donate"></i>   DONATE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<img src="img/pcbstools_donate.png" style="width:100%">
+
+<!-- About Section -->
+  <div class="w3-row-padding w3-center" style="margin-top:64px; margin-bottom:64px">
+    <h1>Where to donate our work</h1>
+    <div class="w3-half w3-margin-top">
+      <a href="https://www.paypal.me/AhRoon" title="Donate on PayPal" onclick="window.open('https://www.paypal.me/AhRoon'); return false;"><h1><i class="fab fa-paypal"></i></h1></a>
+        <p class="w3-large">PayPal</p>
+        <button href="https://www.paypal.me/AhRoon" type="button" class="btn btn-dark" onclick="window.open('https://www.paypal.me/AhRoon'); return false;">Donate on PayPal</button>
+    </div>
+    <div class="w3-half w3-margin-top">
+      <a href="https://www.patreon.com/mysticprismstudio" title="Be a Patron" onclick="window.open('https://www.patreon.com/mysticprismstudio'); return false;"><h1><i class="fab fa-patreon"></i></h1></a>
+        <p class="w3-large">Patreon</p>
+        <button href="https://www.patreon.com/mysticprismstudio" type="button" class="btn btn-dark" onclick="window.open('https://www.patreon.com/mysticprismstudio'); return false;">Be a Patron</button>
+    </div>
+  </div>
+</div>
+
+<footer id="myFooter" class="w3-center">
+  <div class="w3-container w3-black w3-padding-32">
+    <h2><a href="https://github.com/pcbstools/PCBSTools.github.io" title="PCBSTools Repository" onclick="window.open('https://github.com/pcbstools/PCBSTools.github.io'); return false;"><i class="fab fa-github"></i></a> | <a href="https://steamcommunity.com/groups/PCBSTools" title="PCBSTools Official Steam Group" onclick="window.open('https://steamcommunity.com/groups/PCBSTools'); return false;"><i class="fab fa-steam"></i></a> | <a href="https://twitter.com/MPSOfficial_" title="Mystic Prism Studio Official Twitter" onclick="window.open('https://twitter.com/MPSOfficial_'); return false;"><i class="fab fa-twitter"></i></a> | <a href="https://discord.gg/PdF9cQU" title="Official Discord Server" onclick="window.open('https://discord.gg/PdF9cQU'); return false;"><i class="fab fa-discord"></i></a> | <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio Official Website" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;"><img src="img/img_mps.png" style="width:50px"></a></h2>
+    <p>&copy; 2020 <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio Official Website" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;">Mystic Prism Studio</a> & Community Contributors</p>
+    <p>PC Building Simulator, PC Building Simulator logos are trademarks and/or registered trademarks of Irregular Corporation.<br>We are not affiliated with Irregular Corporation. All rights belong to Irregular Corporation.</p>
+  </div>
+</footer>  
+</body>
+</html>

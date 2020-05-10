@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<title>PCBSTools - PC Building Simulator를 위한 고급지고 유용한 도구.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/95f44c4954.js" crossorigin="anonymous"></script>
+<link rel="icon" href="https://raw.githubusercontent.com/pcbstools/PCBSTools.github.io/master/pcbstools_icon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../ko/index.html" class="w3-bar-item w3-button w3-wide"><img src="img/pcbstools_icon.png" style="width:30px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../ko/changelog.html" onclick="window.open('../ko/changelog.html'); return false;" class="w3-bar-item w3-button"><i class="fas fa-file-contract"></i>   변경사항</a>
+      <a href="#" class="w3-bar-item w3-button w3-disabled" onclick="alert('현재 API 이슈로 인해 부품 순위를 이용하실 수 없어요. 불편을 끼쳐드려 죄송해요.')"><i class="fas fa-chart-bar"></i>   부품 순위</a>
+      <a href="../ko/calculator.html" class="w3-bar-item w3-button"><i class="fas fa-calculator"></i>   계산기</a>
+      <div class="w3-dropdown-hover w3-hover-green">
+        <button class="w3-bar-item w3-button"><i class="fas fa-globe"></i> LANGUAGE</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="../ko/index.html" class="w3-bar-item w3-button">한국어</a>
+            <a href="../en/index.html" class="w3-bar-item w3-button">English</a>
+            <a href="../pt/index.html" class="w3-bar-item w3-button">Português</a>
+        </div>
+      </div>
+     <a href="../ko/support.html" class="w3-bar-item w3-button"><i class="fas fa-envelope-open-text"></i>   지원</a>
+     <a href="../ko/donate.html" class="w3-bar-item w3-button"><i class="fas fa-donate"></i>   기부하기</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<img src="img/pcbstools_index.png" style="width:100%">
+
+<!-- About Section -->
+<div class="w3-center w3-container" style="padding:128px 16px" id="about">
+    <p>PC Building Simulator에서 3DMark 점수를 계산 혹은 추측하거나 가장 좋은 부품을 찾는 데 지치셨나요?</p>
+    <p>이 도구들은 여러분의 문제를 해결해줘요!</p>
+    <p>이 웹사이트는 대부분의 커리어 모드 작업을 해결해 줄 부품 순위, 점수 계산기, 조립PC 만들기, PC조립 업그레이드를 포함해서 총 4개의 도구가 들어 있어요.</p>
+    <p></p>
+    <p>주의: 이 웹사이트는 PC Building Simulator 게임을 플레이하는 유저들을 위한 웹사이트예요. 만약 해당 게임이 없다면 <a href="https://store.steampowered.com/app/621060/PC_Building_Simulator/">스팀 상점</a>에서 해당 게임을 구입하시는 것을 고려해보세요!</p>
+</div>
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+  <h1>이 웹사이트는 누가 제작했나요?</h1>
+  <div class="w3-half">
+      <img src="img/img_profile_ahroon.jpg" class="mr-3 mt-3 rounded-circle" style="width:20%">
+      <p class="w3-large">Ah_Roon</p>
+      <p>PCBSTools의 메인 개발자</p>
+  </div>
+  <div class="w3-half">
+      <a href="https://steamcommunity.com/id/kawaiinvshen" title="스팀 프로필 biubiu" onclick="window.open('https://steamcommunity.com/id/kawaiinvshen'); return false;"><img src="img/img_profile_biubiu.jpg" class="mr-3 mt-3 rounded-circle" style="width:20%"></a>
+    <p class="w3-large">biubiu</p>
+    <p>계산기 소스 코드 제공</p>
+  </div>
+</div>
+
+<footer id="myFooter" class="w3-center">
+  <div class="w3-container w3-black w3-padding-32">
+    <h2><a href="https://github.com/pcbstools/PCBSTools.github.io" title="PCBSTools 레포지토리" onclick="window.open('https://github.com/pcbstools/PCBSTools.github.io'); return false;"><i class="fab fa-github"></i></a> | <a href="https://steamcommunity.com/groups/PCBSTools" title="PCBSTools 공식 스팀 그룹" onclick="window.open('https://steamcommunity.com/groups/PCBSTools'); return false;"><i class="fab fa-steam"></i></a> | <a href="https://twitter.com/MPSOfficial_" title="Mystic Prism Studio 공식 트위터" onclick="window.open('https://twitter.com/MPSOfficial_'); return false;"><i class="fab fa-twitter"></i></a> | <a href="https://discord.gg/PdF9cQU" title="공식 디스코드 서버" onclick="window.open('https://discord.gg/PdF9cQU'); return false;"><i class="fab fa-discord"></i></a> | <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio 공식 웹사이트" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;"><img src="img/img_mps.png" style="width:50px"></a></h2>
+    <p>&copy; 2020 <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio 공식 웹사이트" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;">Mystic Prism Studio</a> & Community Contributors</p>
+    <p>PC Building Simulator, PC Building Simulator 로고는 Irregular Corporation의 상표입니다.<br>저희는 Irregular Corporation과 연관이 없습니다. 모든 권리는 Irregular Corporation에 있습니다.</p>
+  </div>
+</footer>    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<title>PCBSTools - Ferramentas Avançadas & Úteis para o PC Building Simulator.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/95f44c4954.js" crossorigin="anonymous"></script>
+<link rel="icon" href="https://raw.githubusercontent.com/pcbstools/PCBSTools.github.io/master/pcbstools_icon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+	<div class="w3-bar w3-white w3-card" id="myNavbar">
+	  <a href="../pt/index.html" class="w3-bar-item w3-button w3-wide"><img src="img/pcbstools_icon.png" style="width:30px"></a>
+	  <!-- Right-sided navbar links -->
+	  <div class="w3-right w3-hide-small">
+		<a href="../pt/changelog.html" onclick="window.open('../pt/changelog.html'); return false;" class="w3-bar-item w3-button"><i class="fas fa-file-contract"></i>   CHANGELOG</a>
+		<a href="#" class="w3-bar-item w3-button w3-disabled" onclick="alert('Atualmente, o Ranking de Peças não está disponível devido a problemas de API. Desculpe por inconveniente.')"><i class="fas fa-chart-bar"></i>   CLASSIFICAÇÃO DE PEÇAS</a>
+		<a href="../pt/calculator.html" class="w3-bar-item w3-button"><i class="fas fa-calculator"></i>   CALCULADORAS</a>
+		<div class="w3-dropdown-hover w3-hover-green">
+		  <button class="w3-bar-item w3-button"><i class="fas fa-globe"></i> LANGUAGE</button>
+		  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+			  <a href="../ko/index.html" class="w3-bar-item w3-button">한국어</a>
+			  <a href="../en/index.html" class="w3-bar-item w3-button">English</a>
+			  <a href="../pt/index.html" class="w3-bar-item w3-button">Português</a>
+		  </div>
+		</div>
+     <a href="../pt/support.html" class="w3-bar-item w3-button"><i class="fas fa-envelope-open-text"></i>   SUPORTE</a>
+     <a href="../pt/donate.html" class="w3-bar-item w3-button"><i class="fas fa-donate"></i>   DOAR</a>
+	  </div>
+	  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+	  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+		<i class="fas fa-bars"></i>
+	  </a>
+	</div>
+  </div>
+
+<!-- Header with full-height image -->
+<img src="img/pcbstools_index.png" style="width:100%">
+
+<!-- About Section -->
+<div class="w3-center w3-container" style="padding:128px 16px" id="about">
+    <p>Estás cansado de calcular ou adivinhar a pontuação no 3DMark, encontrar as melhores peças no PC Building Simulator?</p>
+    <p>Estas ferramentas vão resolver todos os teus problemas</p>
+    <p>Este site contém 4 ferramentas para resolver trabalhos comuns do Modo Carreira em PC Building Simulator, incluindo Ranking de Peças, Calculadora de Pontuação, Construtor de PC's, PC Upgrader.</p>
+    <p></p>
+    <p>Aviso: Este site é para pessoas que jogam o PC Building Simulator. Se não o possuis, considera comprar o jogo na <a href="https://store.steampowered.com/app/621060/PC_Building_Simulator/">Loja da Steam</a>!</p>
+</div>
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+  <h1>Quem fez este website?</h1>
+  <div class="w3-half">
+      <img src="img/img_profile_ahroon.jpg" class="mr-3 mt-3 rounded-circle" style="width:20%">
+      <p class="w3-large">Ah_Roon</p>
+      <p>Desenvolvedor principal das PCBSTools</p>
+  </div>
+  <div class="w3-half">
+      <a href="https://steamcommunity.com/id/kawaiinvshen" title="Steam Profile biubiu" onclick="window.open('https://steamcommunity.com/id/kawaiinvshen'); return false;"><img src="img/img_profile_biubiu.jpg" class="mr-3 mt-3 rounded-circle" style="width:20%"></a>
+    <p class="w3-large">biubiu</p>
+    <p>Provided Calculator Source Code</p>
+  </div>
+</div>
+
+
+<footer id="myFooter" class="w3-center">
+	<div class="w3-container w3-black w3-padding-32">
+	  <h2><a href="https://github.com/pcbstools/PCBSTools.github.io" title="Repositório PCBSTools" onclick="window.open('https://github.com/pcbstools/PCBSTools.github.io'); return false;"><i class="fab fa-github"></i></a> | <a href="https://steamcommunity.com/groups/PCBSTools" title="Grupo Oficial do PCBSTools na Steam" onclick="window.open('https://steamcommunity.com/groups/PCBSTools'); return false;"><i class="fab fa-steam"></i></a> | <a href="https://twitter.com/MPSOfficial_" title="Twitter Official da Mystic Prism Studio" onclick="window.open('https://twitter.com/MPSOfficial_'); return false;"><i class="fab fa-twitter"></i></a> | <a href="https://discord.gg/PdF9cQU" title="Servidor Official de Discord" onclick="window.open('https://discord.gg/PdF9cQU'); return false;"><i class="fab fa-discord"></i></a> | <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio Official Website" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;"><img src="img/img_mps.png" style="width:50px"></a></h2>
+	  <p>&copy; 2020 <a href="https://mysticprismstudio.home.blog/" title="Mystic Prism Studio Site Oficial" onclick="window.open('https://mysticprismstudio.home.blog/'); return false;">Mystic Prism Studio</a> & Contribuidores da Comunidade</p>
+	  <p>PC Building Simulator, Os logotipos do PC Building Simulator são marcas comerciais e / ou marcas registradas da Irregular Corporation.<br>Não somos afiliados à Irregular Corporation. Todos os direitos pertencem à Irregular Corporation.</p>
+	</div>
+</footer> 
+</body>
+</html>
